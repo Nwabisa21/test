@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<head>
+  <title>booking site</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="C:/Users/thembah/Documents/project/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+	   <!--<div class="jumbotron"> -->
+ <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="menu-top">
+        <ul class="nav navbar-nav menu-top">
+        <li class="active"><a href="#" id="right-border">HOME</a></li>
+        <li><a href="#" id="right-border">FAQS</a> </li>
+        <li><a href="#" id="right-border">CONTACT</a> </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">USD<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">EUR</a></li>
+            <li><a href="#">AUD</a></li>
+            <li><a href="#">ZAR</a></li>
+          </ul>
+        </li>
+        </ul>
+      </div>
+
+      <div class="menu social">
+      <ul class="nav navbar-nav">
+              <li<a href="#"><i class="fa fa-fw fa-facebook"></i></a></li>
+              <li<a href="#"><i class="fa fa-fw fa-twitter"></i></a></li> 
+              <li<a href="#"><i class="fa fa-fw fa-pinterest"></i></a></li>
+              <li<a href="#"><i class="fa fa-fw fa-instagram"></i></a></li>
+              <li<a href="#"><i class="fa fa-fw fa-phone"></i></a></li>
+              <li<a href="#"><i class="fa fa-fw fa-envelope-o"></i></a></li>
+      </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+       
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  </div>
+   <hr>
+
+ <div class="container"> 
+     <!-- Navigation -->
+   <div class="mainNav">
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+    <!-- mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand menu-brand" href="#">canvas</a>
+    </div>
+
+
+    <div class="collapse navbar-collapse menu" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><i class="fa fa-fw fa-home"></i>Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="#" class="desktop"><i class="fa fa-fw fa-plane"></i> FLIGHT</a></li>
+        <li><a href="#" class="desktop"><i class="fa fa-fw fa-bed"></i> HOTELS</a> </li>
+        <li><a href="#" class="desktop"><i class="fa fa-fw fa-gift"></i> HOLIDAYS</a></li>
+        <li><a href="#"><i class="fa fa-fw fa-pencil"></i> BLOG</a></li>
+        <li><a href="tel:18001052541"><i class="fa fa-fw fa-phone"></i> 1800 105 2541</a></li>
+      </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+
+
+      <div id="panelTab" class="desktop"> 
+          <ul  class="nav nav-pills">
+              <li class="active"><a  href="#1b" data-toggle="tab"><i class="fa fa-fw fa-plane"></i>Flights</a>
+              </li>
+              <li><a href="#2b" data-toggle="tab"><i class="fa fa-fw fa-bed"></i>Hotels</a>
+              </li>
+              <li><a href="#3b" data-toggle="tab">Flight + Hotels <span id="save">save</span></a>
+              </li>
+              <li><a href="#4a" data-toggle="tab"><i class="fa fa-fw fa-gift"></i>Holidays</a>
+              </li>
+           </ul>
+
+      <div class="tab-content clearfix">
+        <div class="tab-pane active" id="1b">
+          <form>
+          <table class="table" border:0>
+             <tr>
+              <td><h3>BOOK YOUR FLIGHTS</h3></td>
+              <td></td>
+              <td id="btns"><button type="submit" class="btn btn-default di active" id="domestic">Domestic</button><button type="submit" class="btn btn-default di" id="international">International</button></td>
+            </tr>
+            <tr>
+              <td><div class="form-group">
+                <label for="from">FROM</label>
+                <input type="text" placeholder="E.g Melbourne,Australia" class="form-control" id="from" required>
+                </div></td>
+              <td><div class="form-group">
+                <label for="to">TO</label>
+                <input type="text" placeholder="E.g New York, United States" class="form-control" id="to" required>
+                </div></td>
+            </tr>
+            <tr>
+              <td><div class="form-group">
+                <label for="departure">DEPARTURE</label>
+                <input type="date" class="form-control" id="departure" required>
+                </div></td>
+              <td><div class="form-group">
+                <label for="return">RETURN</label>
+                <input type="date" class="form-control" id="return"`required>
+                </div></td>
+              <td><div class="form-group">
+                <label for="adults">ADULTS</label>
+                <input type="select" placeholder="2" class="form-control" id="adults" required>
+                </div></td>
+            </tr>
+            <tr>
+              <td><button type="submit" class="btn btn-default" id="searchFlight">SEARCH FLIGHTS</button></td>
+              <td></td>
+              <td id="bottom-link"><a href="#">Advanced Search</a></td>
+            </tr>
+          </table>
+           <form>
+        </div>
+        <div class="tab-pane" id="2b">
+          <form>
+          <table class="table" border:0>
+             <tr>
+              <td><h3>BOOK A HOTEL</h3></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><div class="form-group">
+                <label for="LOC">LOCATION</label>
+                <input type="text" placeholder="E.g Melbourne,Australia" class="form-control" id="loc" required>
+                </div></td>
+            </tr>
+            <tr>
+              <td><div class="form-group">
+                <label for="departure">CHECK-IN</label>
+                <input type="date" class="form-control" id="departure" required>
+                </div></td>
+              <td><div class="form-group">
+                <label for="return">CHECK-OUT</label>
+                <input type="date" class="form-control" id="return" required>
+                </div></td>
+              <td><div class="form-group">
+                <label for="adults">ADULTS</label>
+                <input type="select" placeholder="2" class="form-control" id="adults" required>
+                </div></td>
+                <td><div class="form-group">
+                <label for="adults">CHILDREN</label>
+                <input type="select" placeholder="1" class="form-control" id="adults" required>
+                </div></td>
+                <td><div class="form-group">
+                <label for="adults">ROOMS</label>
+                <input type="select" placeholder="1" class="form-control" id="adults" required>
+                </div></td>
+            </tr>
+            <tr>
+              <td><button type="submit" class="btn btn-default" id="searchFlight">SEARCH FLIGHTS</button></td>
+              <td></td>
+              <td id="bottom-link"><a href="#">Advanced Search</a></td>
+            </tr>
+          </table>
+           <form>
+        </div>
+        <div class="tab-pane" id="3b">
+          <h3>Flights and Hotels</h3>
+        </div>
+          <div class="tab-pane" id="4b">
+          <h3>Holidays</h3>
+        </div>
+      </div>
+  </div>
+
+
+ <div id="panelTab" class="mobile"> 
+          <ul  class="nav nav-pills">
+              <li class="active"><a  href="#1b" data-toggle="tab"><i class="fa fa-fw fa-plane"></i>Flights</a>
+              </li>
+              <li><a href="#2b" data-toggle="tab"><i class="fa fa-fw fa-bed"></i>Hotels</a>
+              </li>
+              <li><a href="#3b" data-toggle="tab">Flight + Hotels <span id="save">save</span></a>
+              </li>
+              <li><a href="#4a" data-toggle="tab"><i class="fa fa-fw fa-gift"></i>Holidays</a>
+              </li>
+           </ul>
+   <div class="tab-content clearfix">
+        <div class="tab-pane active" id="1b">
+          <form>
+          <table class="table" border:0>
+             <tr>
+              <td><h3>BOOK YOUR FLIGHTS</h3></td></tr>
+              <tr><td id="btns"><button type="submit" class="btn btn-default di active" id="domestic">Domestic</button><button type="submit" class="btn btn-default di" id="international">International</button></td>
+            </tr>
+            <tr>
+              <td><div class="form-group">
+                <label for="from">FROM</label>
+                <input type="text" placeholder="E.g Melbourne,Australia" class="form-control" id="from" >
+                </div></td></tr>
+               <tr><td><div class="form-group">
+                <label for="to">TO</label>
+                <input type="text" placeholder="E.g New York, United States" class="form-control" id="to">
+                </div></td>
+            </tr>
+            <tr>
+              <td><div class="form-group">
+                <label for="departure">DEPARTURE</label>
+                <input type="date" class="form-control" id="departure">
+                </div></td></tr>
+                <tr><td><div class="form-group">
+                <label for="return">RETURN</label>
+                <input type="date" class="form-control" id="return">
+                </div></td></tr>
+               <tr><td><div class="form-group">
+                <label for="adults">ADULTS</label>
+                <input type="select" placeholder="2" class="form-control" id="adults">
+                </div></td>
+            </tr>
+            <tr>
+              <td><button type="submit" class="btn btn-default" id="searchFlight">SEARCH FLIGHTS</button></td>
+              </tr>
+              <tr><td id="bottom-link"><a href="#">Advanced Search</a></td>
+            </tr>
+          </table>
+           <form>
+        </div>
+        <div class="tab-pane" id="2b">
+          <h3>BOOK YOUR HOTEL</h3>
+        </div>
+        <div class="tab-pane" id="3b">
+          <h3>Flights and Hotels</h3>
+        </div>
+          <div class="tab-pane" id="4b">
+          <h3>Holidays</h3>
+        </div>
+      </div>
+  </div>
+ </div>
+ </div>
+</body>
+
+</html>
